@@ -4,14 +4,46 @@
       <div class="top1"></div>
       <div class="top2"></div>
       <div class="top3"></div>
+      <div class="title">可视化分析大数据系统</div>
+      <div class="second-title">VISUAL BIG DATA SYSTEM</div>
+      <div class="button">免费试用版本</div>
     </div>
 
-    <div class="bottom">2</div>
+    <div class="bottom">
+      <div class="bottom-box">
+        <img
+          src="https://ccdn.goodq.top/caches/4ce61cd756c0c3467de0977d6849043b/aHR0cDovLzU3ZWEyMzYwMzY5YjUudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNi8xMS9kY2Q2YjZmM2I5YzAxZmEwYTkxMTlmNjNlYjg0Y2RkMC0xMzJ4MTAwLTkwLndlYnA_p_p100_p_3D.webp"
+        />
+        <div class="small-title">可视化报表</div>
+        <div>応损捠捡枛换换攴朰朲朳枛朸桹</div>
+      </div>
+      <div class="bottom-box">
+        <img
+          src="https://ccdn.goodq.top/caches/4ce61cd756c0c3467de0977d6849043b/aHR0cDovLzU3ZWEyMzYwMzY5YjUudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNi8xMS9kY2Q2YjZmM2I5YzAxZmEwYTkxMTlmNjNlYjg0Y2RkMC0xMzJ4MTAwLTkwLndlYnA_p_p100_p_3D.webp"
+        />
+        <div class="small-title">可视化报表</div>
+        <div>応损捠捡枛换换攴朰朲朳枛朸桹</div>
+      </div>
+      <div class="bottom-box">
+        <img
+          src="https://ccdn.goodq.top/caches/4ce61cd756c0c3467de0977d6849043b/aHR0cDovLzU3ZWEyMzYwMzY5YjUudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNi8xMS9kY2Q2YjZmM2I5YzAxZmEwYTkxMTlmNjNlYjg0Y2RkMC0xMzJ4MTAwLTkwLndlYnA_p_p100_p_3D.webp"
+        />
+        <div class="small-title">可视化报表</div>
+        <div>応损捠捡枛换换攴朰朲朳枛朸桹</div>
+      </div>
+      <div class="bottom-box">
+        <img
+          src="https://ccdn.goodq.top/caches/4ce61cd756c0c3467de0977d6849043b/aHR0cDovLzU3ZWEyMzYwMzY5YjUudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNi8xMS9kY2Q2YjZmM2I5YzAxZmEwYTkxMTlmNjNlYjg0Y2RkMC0xMzJ4MTAwLTkwLndlYnA_p_p100_p_3D.webp"
+        />
+        <div class="small-title">可视化报表</div>
+        <div>応损捠捡枛换换攴朰朲朳枛朸桹</div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import show from '../utils/show'
+import show from "../utils/show";
 export default {
   name: "Banner",
   data() {
@@ -23,20 +55,48 @@ export default {
     let top1 = document.querySelector(".top1");
     let top2 = document.querySelector(".top2");
     let top3 = document.querySelector(".top3");
-    show(top1,top2,top3)
-   
+    show(top1, top2, top3);
   },
 };
 </script>
 
 <style scoped>
-.top {
+.banner {
   position: relative;
 }
-
+.top {
+  width: 100%;
+  position: relative;
+  position: absolute;
+}
+.bottom {
+  top: 460px;
+  width: 100%;
+  position: absolute;
+  height: 285px;
+  background-color: #32383d;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.bottom-box {
+  /* margin: 0 80px; */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.bottom-box img {
+  width: 70%;
+  margin-bottom: 30px;
+}
+.small-title {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
 .top1 {
   opacity: 1;
-  transition: all 1s;
+  transition: all 2s;
   position: absolute;
   width: 100%;
   height: 460px;
@@ -45,7 +105,7 @@ export default {
 
 .top2 {
   opacity: 0;
-  transition: all 1s;
+  transition: all 2s;
   position: absolute;
   width: 100%;
   height: 460px;
@@ -54,7 +114,7 @@ export default {
 
 .top3 {
   opacity: 0;
-  transition: all 1s;
+  transition: all 2s;
   position: absolute;
   width: 100%;
   height: 460px;
@@ -64,5 +124,58 @@ export default {
 .banner {
   height: 600px;
   margin-bottom: 400px;
+}
+.title {
+  position: absolute;
+  top: 140px;
+  left: 50px;
+  color: #d3d3d3;
+  font-size: 48px;
+  z-index: 10;
+  animation: move 1s;
+}
+.second-title {
+  position: absolute;
+  top: 230px;
+  left: 50px;
+  color: #fff;
+  font-size: 28px;
+  z-index: 10;
+  opacity: 0;
+  animation: move 1s forwards;
+  animation-delay: 0.2s;
+}
+.button {
+  position: absolute;
+  top: 300px;
+  left: 50px;
+  color: #fff;
+  font-size: 16px;
+  z-index: 10;
+  background-color: #ef4f19;
+  padding: 12px 40px;
+  border: 1px solid #ef4f19;
+  border-radius: 30px;
+  opacity: 0;
+  animation: move 1s forwards;
+  animation-delay: 1s;
+}
+.box {
+  z-index: 10;
+  width: 300px;
+  height: 300px;
+}
+.box img {
+  width: 100%;
+  height: 100%;
+}
+@keyframes move {
+  0% {
+    transform: translateX(-500px);
+  }
+  100% {
+    transform: translateX(-0px);
+    opacity: 1;
+  }
 }
 </style>
