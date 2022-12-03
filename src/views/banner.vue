@@ -1,3 +1,4 @@
+
 <template>
   <div class="banner">
     <div class="top">
@@ -12,6 +13,9 @@
     <div class="bottom">
       <div class="bottom-box">
         <img
+          @mouseover="isHoverfirst = !isHoverfirst"
+          @mouseleave="hoverRemove"
+          :class="{ 'hover-swing': isHoverfirst }"
           src="https://ccdn.goodq.top/caches/4ce61cd756c0c3467de0977d6849043b/aHR0cDovLzU3ZWEyMzYwMzY5YjUudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNi8xMS9kY2Q2YjZmM2I5YzAxZmEwYTkxMTlmNjNlYjg0Y2RkMC0xMzJ4MTAwLTkwLndlYnA_p_p100_p_3D.webp"
         />
         <div class="small-title">可视化报表</div>
@@ -19,6 +23,9 @@
       </div>
       <div class="bottom-box">
         <img
+          @mouseover="isHovertwo = !isHovertwo"
+          @mouseleave="hoverRemove"
+          :class="{ 'hover-swing': isHovertwo }"
           src="https://ccdn.goodq.top/caches/4ce61cd756c0c3467de0977d6849043b/aHR0cDovLzU3ZWEyMzYwMzY5YjUudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNi8xMS9kY2Q2YjZmM2I5YzAxZmEwYTkxMTlmNjNlYjg0Y2RkMC0xMzJ4MTAwLTkwLndlYnA_p_p100_p_3D.webp"
         />
         <div class="small-title">可视化报表</div>
@@ -26,6 +33,9 @@
       </div>
       <div class="bottom-box">
         <img
+          @mouseover="isHoverthree = !isHoverthree"
+          @mouseleave="hoverRemove"
+          :class="{ 'hover-swing': isHoverthree }"
           src="https://ccdn.goodq.top/caches/4ce61cd756c0c3467de0977d6849043b/aHR0cDovLzU3ZWEyMzYwMzY5YjUudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNi8xMS9kY2Q2YjZmM2I5YzAxZmEwYTkxMTlmNjNlYjg0Y2RkMC0xMzJ4MTAwLTkwLndlYnA_p_p100_p_3D.webp"
         />
         <div class="small-title">可视化报表</div>
@@ -33,6 +43,9 @@
       </div>
       <div class="bottom-box">
         <img
+          @mouseover="isHoverfour = !isHoverfour"
+          @mouseleave="hoverRemove"
+          :class="{ 'hover-swing': isHoverfour }"
           src="https://ccdn.goodq.top/caches/4ce61cd756c0c3467de0977d6849043b/aHR0cDovLzU3ZWEyMzYwMzY5YjUudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNi8xMS9kY2Q2YjZmM2I5YzAxZmEwYTkxMTlmNjNlYjg0Y2RkMC0xMzJ4MTAwLTkwLndlYnA_p_p100_p_3D.webp"
         />
         <div class="small-title">可视化报表</div>
@@ -48,7 +61,11 @@ export default {
   name: "Banner",
   data() {
     return {
-      i: 1,
+      isHoverfirst: false,
+      isHovertwo: false,
+      isHoverthree: false,
+      isHoverfour: false,
+      timer: null,
     };
   },
   mounted() {
@@ -56,6 +73,19 @@ export default {
     let top2 = document.querySelector(".top2");
     let top3 = document.querySelector(".top3");
     show(top1, top2, top3);
+  },
+  methods: {
+    // hoverShow() {
+    //   this.isHover = !this.isHover;
+    // },
+    hoverRemove() {
+      this.timer = setTimeout(() => {
+        this.isHoverfirst = !this.isHoverfirst;
+        this.isHovertwo = !this.isHovertwo;
+        this.isHoverthree = !this.isHoverthree;
+        this.isHoverfour = !this.isHoverfour;
+      }, 1500);
+    },
   },
 };
 </script>
@@ -90,6 +120,11 @@ export default {
   width: 70%;
   margin-bottom: 30px;
 }
+.hover-swing {
+  animation: swing 2s;
+  transition: all 2s;
+}
+
 .small-title {
   font-weight: 600;
   margin-bottom: 10px;
@@ -176,6 +211,25 @@ export default {
   100% {
     transform: translateX(-0px);
     opacity: 1;
+  }
+}
+
+@keyframes swing {
+  20% {
+    transform: rotate(15deg);
+  }
+
+  40% {
+    transform: rotate(-10deg);
+  }
+  60% {
+    transform: rotate(5deg);
+  }
+  80% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }
 </style>
