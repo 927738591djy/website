@@ -5,23 +5,22 @@
       您可以双击这里或者点击编辑按钮来修改内容，您还可以添加图标按钮图片等常用元素
     </div>
     <div class="bottom">
-      <ul>
-        <li class="bottom-box">
+        <div class="bottom-box">
             <img src="https://ccdn.goodq.top/caches/4ce61cd756c0c3467de0977d6849043b/aHR0cDovLzU3ZWEyMzYwMzY5YjUudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNi8xMC81NTg2ZmNlYjkxNDg5NDhjMWY5ODk4NDgwM2VhZTI3Mi0xNDB4MTE4LTkwLndlYnA_p_p100_p_3D.webp" alt="">
-            <div>实时沟通平台</div>
+            <div class="title">实时沟通平台</div>
             <p>応损捠捡换换攴朰朲朳枛朸桹，夲夳夵壱売壳圢圦圧圩圪囡団囤囥咍咎壱売壳圢圤</p>
-        </li>
-        <li class="bottom-box">
+        </div>
+        <div style="margin:0 40px" class="bottom-box">
             <img src="https://ccdn.goodq.top/caches/4ce61cd756c0c3467de0977d6849043b/aHR0cDovLzU3ZWEyMzYwMzY5YjUudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNi8xMC81NTg2ZmNlYjkxNDg5NDhjMWY5ODk4NDgwM2VhZTI3Mi0xNDB4MTE4LTkwLndlYnA_p_p100_p_3D.webp" alt="">
-            <div>实时沟通平台</div>
+            <div class="title">实时沟通平台</div>
             <p>応损捠捡换换攴朰朲朳枛朸桹，夲夳夵壱売壳圢圦圧圩圪囡団囤囥咍咎壱売壳圢圤</p>
-        </li>
-        <li class="bottom-box">
+        </div>
+        <div class="bottom-box">
             <img src="https://ccdn.goodq.top/caches/4ce61cd756c0c3467de0977d6849043b/aHR0cDovLzU3ZWEyMzYwMzY5YjUudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNi8xMC81NTg2ZmNlYjkxNDg5NDhjMWY5ODk4NDgwM2VhZTI3Mi0xNDB4MTE4LTkwLndlYnA_p_p100_p_3D.webp" alt="">
-            <div>实时沟通平台</div>
+            <div class="title">实时沟通平台</div>
             <p>応损捠捡换换攴朰朲朳枛朸桹，夲夳夵壱売壳圢圦圧圩圪囡団囤囥咍咎壱売壳圢圤</p>
-        </li>
-      </ul>
+        </div>
+     
     </div>
   </div>
 </template>
@@ -42,6 +41,10 @@ export default {
   background-size: cover;
   height: 712px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .background {
   z-index: 10;
@@ -50,11 +53,19 @@ export default {
   width: 100%;
   background-color: rgba(247, 247, 247, 0.7);
 }
+.top{
+    z-index:15;
+    margin-bottom:50px;
+    font-family: '微软雅黑';
+    color:#696969;
+    font-size: 15px;
+}
 .bottom{
+    z-index:15;
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    padding:0 150px;
 }
 .bottom-box{
     background-color: transparent;
@@ -67,8 +78,15 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
-.bottom-box img{
-
+.bottom-box:hover{
+    background-color: #fff;
+    border:1px solid rgb(239, 79, 25);;
+}
+.title{
+    color: rgb(239, 79, 25);
+    font-size: 20px;
+    padding:20px 0;
 }
 </style>

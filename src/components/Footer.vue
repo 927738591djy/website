@@ -44,7 +44,8 @@ export default {
 .footer {
     position: absolute;
     width: 100%;
-    top: 1525px;
+    /* top: 1525px; */
+    top:2187px;
     left: 0;
     background-color: #32383d;
     height: 347px;
