@@ -94,16 +94,15 @@ export default {
 .banner {
   /* position: relative;   */
   position: absolute;
-  top:27px;
   width: 100%;
 }
 .top {
   width: 100%;
-  top: 27px;
+  top: 67px;
   position: absolute;
 }
 .bottom {
-  top: 487px;
+  top: 527px;
   width: 100%;
   position: absolute;
   height: 285px;
