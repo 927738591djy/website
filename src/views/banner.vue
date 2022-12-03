@@ -92,15 +92,18 @@ export default {
 
 <style scoped>
 .banner {
-  position: relative;
+  /* position: relative;   */
+  position: absolute;
+  top:27px;
+  width: 100%;
 }
 .top {
   width: 100%;
-  position: relative;
+  top: 27px;
   position: absolute;
 }
 .bottom {
-  top: 460px;
+  top: 487px;
   width: 100%;
   position: absolute;
   height: 285px;
@@ -156,10 +159,6 @@ export default {
   background: url("https://ccdn.goodq.top/caches/4ce61cd756c0c3467de0977d6849043b/aHR0cDovLzU3ZWEyMzYwMzY5YjUudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNi8xMS84NGI3MTgzMTQ0NWVkZWEyODMzOTRkMGI4NjI3ZTJmMS05MC53ZWJw.webp");
 }
 
-.banner {
-  height: 600px;
-  margin-bottom: 400px;
-}
 .title {
   position: absolute;
   top: 140px;

@@ -28,6 +28,10 @@ export default {
 
 <style scoped>
 .top {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top:0;
     background-color: #22282d;
     padding: 20px 130px;
 }
