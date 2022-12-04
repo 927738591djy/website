@@ -87,8 +87,8 @@
       <!--滚动条-->
       <div class="swiper-scrollbar" slot="scrollbar"></div>
       <!--前进后退按钮-->
-      <div class="swiper-button-prev" slot="button-prev"></div>
-      <div class="swiper-button-next" slot="button-next"></div>
+      <!-- <div class="swiper-button-prev" slot="button-prev"></div>
+      <div class="swiper-button-next" slot="button-next"></div> -->
     </swiper>
 
     <!--配置自定义的页面跳转按钮，to(page)为自定义方法，其内调用了swiper的内置方法-->
@@ -138,10 +138,10 @@ export default {
         },
 
         //前进后退按钮
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
+        // navigation: {
+        //   nextEl: ".swiper-button-next",
+        //   prevEl: ".swiper-button-prev",
+        // },
 
         //滚动条
         scrollbar: {
@@ -152,11 +152,11 @@ export default {
         //幻灯片播放配置项
         loop: true, //是否循环播放
         speed: 1000, // 发生页面切换动画时，动画的切换速度
-        autoplay: {
-          delay: 2000, // 幻灯片停留时间
-          disableOnInteraction: false, // 用户操作swiper之后，是否禁止autoplay
-          stopOnLastSlide: true, // 切换到最后一个slide时是否停止自动切换。（loop模式下无效）。
-        },
+        // autoplay: {
+        //   delay: 2000, // 幻灯片停留时间
+        //   disableOnInteraction: false, // 用户操作swiper之后，是否禁止autoplay
+        //   stopOnLastSlide: true, // 切换到最后一个slide时是否停止自动切换。（loop模式下无效）。
+        // },
         on: {
           slideChangeTransitionEnd: function () {
             console.log(this.activeIndex); //每次切换结束时，在控制台打印现在是第几个slide
