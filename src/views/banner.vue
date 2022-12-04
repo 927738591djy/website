@@ -193,6 +193,11 @@ export default {
   animation: move 1s forwards;
   animation-delay: 1s;
 }
+.button:hover{
+  background-color:transparent;
+    color:#ef4f19;
+    border:1px solid #ef4f19;
+}
 .box {
   z-index: 10;
   width: 300px;

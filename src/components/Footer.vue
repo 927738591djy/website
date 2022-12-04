@@ -44,10 +44,10 @@ export default {
 .footer {
     position: absolute;
     width: 100%;
-    top:3416px;
+    /* top:3576px; */
     left: 0;
     background-color: #32383d;
-    height: 347px;
+    height: 100%;
     font-size: 12px;
 }
 

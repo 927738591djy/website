@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import vueRouter from 'vue-router' //导入路由
 import Home from '../views/home.vue'
+import Service from '../views/service.vue'
+import Price from '../views/price.vue'
 
 Vue.use(vueRouter) //使用路由
 
@@ -10,12 +12,17 @@ const routes = [
         path: '/',
         name: 'Home',
         component: Home
+    },
+    {
+        path: '/service',
+        name: 'Service',
+        component: Service
+    },
+    {
+        path: '/price',
+        name: 'Price',
+        component: Price
     }
-    // {
-    //     path: '/test',
-    //     name: 'Test',
-    //     component: Test
-    // }
 ]
 
 

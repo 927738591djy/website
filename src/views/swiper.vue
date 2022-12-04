@@ -189,7 +189,7 @@ export default {
 .app-container {
   position: relative;
   position: absolute;
-  top: 1525px;
+  /* top: 1525px; */
   width: 100%;
   height: 662px;
   background-color: pink;
