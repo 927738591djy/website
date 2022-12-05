@@ -5,6 +5,7 @@ import Service from '../views/service.vue'
 import Price from '../views/price.vue'
 import News from '../views/news.vue'
 import About from '../views/about.vue'
+import Contact from '../views/contact.vue'
 
 Vue.use(vueRouter) //使用路由
 
@@ -34,6 +35,11 @@ const routes = [
         path: '/about',
         name: 'About',
         component: About
+    },
+    {
+        path: '/contact',
+        name: 'Contact',
+        component: Contact
     }
 ]
 

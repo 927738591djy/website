@@ -13,7 +13,7 @@
                 <li><router-link to="/price">定价</router-link></li>
                 <li><router-link to="/news">新闻</router-link></li>
                 <li><router-link to="/about">关于</router-link></li>
-                <li>联系</li>
+                <li><router-link to="/contact">联系</router-link></li>
             </ul>
         </div>
       </div>
