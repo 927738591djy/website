@@ -13,11 +13,11 @@
                                 <div>
                                     <label for="">姓名</label> <span style="color: #ef4f19">*</span>
                                 </div>
-                                <input type="text" value="" placeholder="" name="name" />
+                                <input type="text" value="" placeholder="" />
                             </div>
                             <div class="input">
                                 <div><label for="">联系电话</label></div>
-                                <input type="text" value="" placeholder="" name="name" />
+                                <input type="text" value="" placeholder="" />
                             </div>
                         </div>
 
@@ -25,7 +25,7 @@
                             <div>
                                 <label for="">邮箱</label> <span style="color: #ef4f19">*</span>
                             </div>
-                            <input type="text" value="" placeholder="" name="name" />
+                            <input type="text" value="" placeholder="" />
                         </div>
 
                         <div class="input">

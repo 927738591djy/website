@@ -35,8 +35,7 @@
                         <!--幻灯片组件生成的标签自带.swiper-slide的类名，但单类名选择器设置的部分css(如宽高)将被覆盖-->
                         <swiper-slide class="swiper_slide_item">
                             <div class="left">
-                                <img
-                                    src="https://ccdn.goodq.top/caches/4ce61cd756c0c3467de0977d6849043b/aHR0cDovLzU3ZWEyMzYwMzY5YjUudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNy8wNi8xNDk3OTMyMjAwNTk0OGExYTg3YjlhYjQ5NDUtMjIweDMwMC05MC53ZWJw.webp"
+                                <img src="https://ccdn.goodq.top/caches/4ce61cd756c0c3467de0977d6849043b/aHR0cDovLzU3ZWEyMzYwMzY5YjUudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNy8wNi8xNDk3OTMyMjAwNTk0OGExYTg3YjlhYjQ5NDUtMjIweDMwMC05MC53ZWJw.webp"
                                     alt="acb0cd2316ff2a9e771b13be7c38bd50.png" description="" data-attach-id="18836"
                                     data-title="acb0cd2316ff2a9e771b13be7c38bd50.png" title="" src-img="" />
                                 <div class="left-name">
@@ -48,8 +47,7 @@
                         </swiper-slide>
                         <swiper-slide class="swiper_slide_item">
                             <div class="left">
-                                <img
-                                    src="https://ccdn.goodq.top/caches/4ce61cd756c0c3467de0977d6849043b/aHR0cDovLzU3ZWEyMzYwMzY5YjUudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNy8wNi8xNDk3OTMyMjAwNTk0OGExYTg3YjlhYjQ5NDUtMjIweDMwMC05MC53ZWJw.webp"
+                                <img src="https://ccdn.goodq.top/caches/4ce61cd756c0c3467de0977d6849043b/aHR0cDovLzU3ZWEyMzYwMzY5YjUudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNy8wNi8xNDk3OTMyMjAwNTk0OGExYTg3YjlhYjQ5NDUtMjIweDMwMC05MC53ZWJw.webp"
                                     alt="acb0cd2316ff2a9e771b13be7c38bd50.png" description="" data-attach-id="18836"
                                     data-title="acb0cd2316ff2a9e771b13be7c38bd50.png" title="" src-img="" />
                                 <div class="left-name">
@@ -62,8 +60,7 @@
                         </swiper-slide>
                         <swiper-slide class="swiper_slide_item">
                             <div class="left">
-                                <img
-                                    src="https://ccdn.goodq.top/caches/4ce61cd756c0c3467de0977d6849043b/aHR0cDovLzU3ZWEyMzYwMzY5YjUudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNy8wNi8xNDk3OTMyMjAwNTk0OGExYTg3YjlhYjQ5NDUtMjIweDMwMC05MC53ZWJw.webp"
+                                <img src="https://ccdn.goodq.top/caches/4ce61cd756c0c3467de0977d6849043b/aHR0cDovLzU3ZWEyMzYwMzY5YjUudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNy8wNi8xNDk3OTMyMjAwNTk0OGExYTg3YjlhYjQ5NDUtMjIweDMwMC05MC53ZWJw.webp"
                                     alt="acb0cd2316ff2a9e771b13be7c38bd50.png" description="" data-attach-id="18836"
                                     data-title="acb0cd2316ff2a9e771b13be7c38bd50.png" title="" src-img="" />
                                 <div class="left-name">
@@ -98,8 +95,12 @@
 
 
         </div>
-        <div class="advert-po"><Advert></Advert></div>
-        <div class="footer-po"><Footer></Footer></div>
+        <div class="advert-po">
+            <Advert></Advert>
+        </div>
+        <div class="footer-po">
+            <Footer></Footer>
+        </div>
     </div>
 </template>
 
@@ -110,35 +111,15 @@ import Footer from '../components/Footer.vue'
 export default {
     data() {
         return {
-            intro: "您可以双击这里或者点击编辑按钮来修改内容，您还可以添加图标按钮图片等常用元素",
+            intro:"这是段介绍哦",
             currentindex: "",
             //swiperOption：swiper配置项信息，需要绑定在swiper标签的 :option 属性中
             swiperOption: {
-                //分页器配置项
-                pagination: {
-                    el: ".swiper-pagination", //分页器的类名
-                    clickable: true, // 点击分页器跳切换到相应的幻灯片
-                    //type: "bullets" | "progressbar" | "fraction", //小圆点|进度条|数字页码
-                    dynamicBullets: true, //动态小圆点(type:'bullets'时)
-                    //自定义分页器，需设置样式
-                    renderBullet(index, className) {
-                        return `<span class="${className} swiper-pagination-bullet-custom">${index + 1
-                            }</span>`;
-                    },
-                },
-
                 // 前进后退按钮
                 navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
+                  nextEl: ".swiper-button-next",
+                  prevEl: ".swiper-button-prev",
                 },
-
-                //滚动条
-                scrollbar: {
-                    el: ".swiper-scrollbar",
-                    hide: true,
-                },
-
                 //幻灯片播放配置项
                 loop: true, //是否循环播放
                 speed: 1000, // 发生页面切换动画时，动画的切换速度
@@ -153,10 +134,10 @@ export default {
                     },
                 },
             },
-        }
+        };
     },
     components: {
-        Declaration,Advert,Footer
+        Declaration, Advert, Footer
     },
     //计算属性
     computed: {
@@ -252,7 +233,7 @@ export default {
 
 #mySwiper {
     background-color: #fff;
-    overflow:visible;
+    overflow: visible;
 }
 
 #mySwiper /deep/ .swiper-pagination-bullet-custom.swiper-pagination-bullet {
@@ -269,22 +250,26 @@ export default {
     /* align-items: center; */
     padding: 0 150px;
     z-index: 10;
- 
+
 }
 
 
-.swiper-button-prev,.swiper-button-next {
+.swiper-button-prev,
+.swiper-button-next {
     background-color: #6d6a6a;
     color: #fff;
     width: 40px;
     height: 40px;
 }
-.swiper-button-prev{
+
+.swiper-button-prev {
     left: 0;
 }
-.swiper-button-next{
+
+.swiper-button-next {
     right: 0;
 }
+
 .swiper-button-prev:after,
 .swiper-button-next:after {
     font-size: 15px !important;
@@ -345,16 +330,18 @@ export default {
     width: 80px;
     margin-right: 20px;
 }
-.footer-po{
-  position: absolute;
-  top: 1904px;
-  width: 100%;
-  height: 347px;
+
+.footer-po {
+    position: absolute;
+    top: 1904px;
+    width: 100%;
+    height: 347px;
 }
-.advert-po{
-  position: absolute;
-  top: 1744px;
-  width: 100%;
-  height: 160px;
+
+.advert-po {
+    position: absolute;
+    top: 1744px;
+    width: 100%;
+    height: 160px;
 }
 </style>
