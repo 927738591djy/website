@@ -35,41 +35,48 @@
                         <!--幻灯片组件生成的标签自带.swiper-slide的类名，但单类名选择器设置的部分css(如宽高)将被覆盖-->
                         <swiper-slide class="swiper_slide_item">
                             <div class="left">
-                                <img class="front_image vc_box_circle ag_image"
+                                <img
                                     src="https://ccdn.goodq.top/caches/4ce61cd756c0c3467de0977d6849043b/aHR0cDovLzU3ZWEyMzYwMzY5YjUudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNy8wNi8xNDk3OTMyMjAwNTk0OGExYTg3YjlhYjQ5NDUtMjIweDMwMC05MC53ZWJw.webp"
                                     alt="acb0cd2316ff2a9e771b13be7c38bd50.png" description="" data-attach-id="18836"
-                                    data-title="acb0cd2316ff2a9e771b13be7c38bd50.png" title="" src-img=""
-                                 />
+                                    data-title="acb0cd2316ff2a9e771b13be7c38bd50.png" title="" src-img="" />
                                 <div class="left-name">
                                     <div class="left-name-name">Joeby Ragbe</div>
                                     <div class="left-name-work">ceo</div>
                                 </div>
                             </div>
-                           <div class="right"><span class="intro-line">——————</span>请用一句话来概括人物特点</div>
+                            <div class="right"><span class="intro-line"></span>请用一句话来概括人物特点</div>
                         </swiper-slide>
                         <swiper-slide class="swiper_slide_item">
                             <div class="left">
-                                <img class="front_image vc_box_circle ag_image"
-                                    src="https://ccdn.goodq.top/caches/4ce61cd756c0c3467de0977d6849043b/aHR0cDovLzU3ZWEyMzYwMzY5YjUudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNy8wNi8xNDk3OTMyMTk5NTk0OGExYTc5ZWVlYTYzNDctMjAweDIwMC05MC53ZWJw.webp"
+                                <img
+                                    src="https://ccdn.goodq.top/caches/4ce61cd756c0c3467de0977d6849043b/aHR0cDovLzU3ZWEyMzYwMzY5YjUudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNy8wNi8xNDk3OTMyMjAwNTk0OGExYTg3YjlhYjQ5NDUtMjIweDMwMC05MC53ZWJw.webp"
                                     alt="acb0cd2316ff2a9e771b13be7c38bd50.png" description="" data-attach-id="18836"
-                                    data-title="acb0cd2316ff2a9e771b13be7c38bd50.png" title="" src-img=""
-                                    style="border-radius: 50%" />
+                                    data-title="acb0cd2316ff2a9e771b13be7c38bd50.png" title="" src-img="" />
+                                <div class="left-name">
+                                    <div class="left-name-name">Joeby Ragbe</div>
+                                    <div class="left-name-work">ceo</div>
+                                </div>
                             </div>
-                            
+                            <div class="right"><span class="intro-line"></span>请用一句话来概括人物特点</div>
+
                         </swiper-slide>
                         <swiper-slide class="swiper_slide_item">
                             <div class="left">
-                                <img class="front_image vc_box_circle ag_image"
-                                    src="https://ccdn.goodq.top/caches/4ce61cd756c0c3467de0977d6849043b/aHR0cDovLzU3ZWEyMzYwMzY5YjUudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNy8wNi8xNDk3OTMyMTk5NTk0OGExYTc5ZWVlYTYzNDctMjAweDIwMC05MC53ZWJw.webp"
+                                <img
+                                    src="https://ccdn.goodq.top/caches/4ce61cd756c0c3467de0977d6849043b/aHR0cDovLzU3ZWEyMzYwMzY5YjUudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNy8wNi8xNDk3OTMyMjAwNTk0OGExYTg3YjlhYjQ5NDUtMjIweDMwMC05MC53ZWJw.webp"
                                     alt="acb0cd2316ff2a9e771b13be7c38bd50.png" description="" data-attach-id="18836"
-                                    data-title="acb0cd2316ff2a9e771b13be7c38bd50.png" title="" src-img=""
-                                    style="border-radius: 50%" />
+                                    data-title="acb0cd2316ff2a9e771b13be7c38bd50.png" title="" src-img="" />
+                                <div class="left-name">
+                                    <div class="left-name-name">Joeby Ragbe</div>
+                                    <div class="left-name-work">ceo</div>
+                                </div>
                             </div>
+                            <div class="right"><span class="intro-line"></span>请用一句话来概括人物特点</div>
                         </swiper-slide>
 
                         <!-- 可选的控件 -->
                         <!--分页器-->
-                        <div class="swiper-pagination" slot="pagination"></div>
+                        <!-- <div class="swiper-pagination" slot="pagination"></div> -->
                         <!--滚动条-->
                         <!-- <div class="swiper-scrollbar" slot="scrollbar"></div> -->
                         <!--前进后退按钮-->
@@ -91,11 +98,15 @@
 
 
         </div>
+        <div class="advert-po"><Advert></Advert></div>
+        <div class="footer-po"><Footer></Footer></div>
     </div>
 </template>
 
 <script>
 import Declaration from '../components/declaration.vue'
+import Advert from '../components/advert.vue'
+import Footer from '../components/Footer.vue'
 export default {
     data() {
         return {
@@ -145,7 +156,7 @@ export default {
         }
     },
     components: {
-        Declaration
+        Declaration,Advert,Footer
     },
     //计算属性
     computed: {
@@ -234,7 +245,7 @@ export default {
 .team-title-text {
     font-size: 16px;
     color: #808080;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 
 
@@ -256,62 +267,94 @@ export default {
     background-color: transparent;
     display: flex;
     /* align-items: center; */
-    padding: 0 100px;
+    padding: 0 150px;
     z-index: 10;
+ 
 }
 
-.swiper-button-prev,
-.swiper-button-next {
-    background-color: #cecece;
+
+.swiper-button-prev,.swiper-button-next {
+    background-color: #6d6a6a;
     color: #fff;
-    width: 30px;
-    height: 30px;
-    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+}
+.swiper-button-prev{
+    left: 0;
+}
+.swiper-button-next{
+    right: 0;
 }
 .swiper-button-prev:after,
 .swiper-button-next:after {
     font-size: 15px !important;
     font-weight: 700;
 }
-.left{
-    width: 220px;
+
+.left {
+    width: 230px;
     height: 100%;
 }
-.left img{
+
+.left img {
     width: 100%;
-    height: 100%;
+    height: 108%;
+    margin-top: -10%;
 }
-.left-name{
-    width: 220px;
+
+.left-name {
+    width: 230px;
     background-color: #e8e8e8;
     text-align: center;
     padding: 20px 0;
 }
-.left-name-name{
-font-size: 16px;
-color: #444;
+
+.left-name-name {
+    font-size: 16px;
+    color: #444;
 }
-.left-name-work{
-font-size: 12px;
-color: #7e7e7e;
+
+.left-name-work {
+    font-size: 12px;
+    color: #7e7e7e;
 }
-.right{
+
+.right {
     font-size: 12px;
     color: #000;
-    margin-top: 100px;
+    margin-top: -100px;
+    display: flex;
+    align-items: center;
 }
-.intro-line{
-    margin-right: 60px;
+
+.intro-line {
+    width: 0px;
+    background-color: rgb(121, 119, 119);
+    height: 0.5px;
+    display: inline-block;
+    margin-right: 30px;
+    transition: all 0.6s;
 }
-.right{
-    transform:translateX(-80px);
+
+.right {
     z-index: -1;
     transition: all 0.6s;
 }
-.right:hover{
-    transform:translateX(0);
-}
-.right:hover .intro-line{
+
+.right:hover .intro-line {
+    width: 80px;
     margin-right: 20px;
+}
+.footer-po{
+  position: absolute;
+  top: 1904px;
+  width: 100%;
+  height: 347px;
+}
+.advert-po{
+  position: absolute;
+  top: 1744px;
+  width: 100%;
+  height: 160px;
 }
 </style>
