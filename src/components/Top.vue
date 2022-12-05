@@ -11,7 +11,7 @@
                 <li>首页</li>
                 <li><router-link to="/service">服务</router-link></li>
                 <li><router-link to="/price">定价</router-link></li>
-                <li>新闻</li>
+                <li><router-link to="/news">新闻</router-link></li>
                 <li>关于</li>
                 <li>联系</li>
             </ul>
