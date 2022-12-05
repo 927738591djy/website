@@ -61,6 +61,9 @@ export default {
     background-position: 0 34%;
     height: 247px;
 }
+.declaration-intro{
+    /* color: #fff; */
+}
 
 .news-box {
     background-color: #fff;
