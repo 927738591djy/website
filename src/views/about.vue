@@ -28,7 +28,7 @@
 
 
 
-                <div style="width:80%">
+                <div style="width:80%;">
                     <swiper :options="swiperOption" ref="mySwiper" id="mySwiper">
                         <!--必须的组件-->
                         <!--每页幻灯片使用swiper-slide标签-->
@@ -45,7 +45,7 @@
                                     <div class="left-name-work">ceo</div>
                                 </div>
                             </div>
-                           <div class="right">————&nbsp;&nbsp;请用一句话来概括人物特点</div>
+                           <div class="right"><span class="intro-line">——————</span>请用一句话来概括人物特点</div>
                         </swiper-slide>
                         <swiper-slide class="swiper_slide_item">
                             <div class="left">
@@ -299,5 +299,19 @@ color: #7e7e7e;
     font-size: 12px;
     color: #000;
     margin-top: 100px;
+}
+.intro-line{
+    margin-right: 60px;
+}
+.right{
+    transform:translateX(-80px);
+    z-index: -1;
+    transition: all 0.6s;
+}
+.right:hover{
+    transform:translateX(0);
+}
+.right:hover .intro-line{
+    margin-right: 20px;
 }
 </style>
