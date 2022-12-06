@@ -2,9 +2,9 @@
     <div class="top">
         <div class="top-inner">
             <div class="logo">
-                <a href="http://57ea2360369b5.t73.qifeiye.com/"><span><img
+                <router-link to="/"><span><img
                             src="https://ccdn.goodq.top/caches/4ce61cd756c0c3467de0977d6849043b/aHR0cDovLzU3ZWEyMzYwMzY5YjUudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNi8xMS82NWU2YWNkMDVhNjJhZjA1MDU0YTE5N2U5NGRkMWRjOC05MC53ZWJw.webp"
-                            alt="软件开发公司"></span></a>
+                            alt="软件开发公司"></span></router-link>
             </div>
             <div>
                 <ul class="nav">
