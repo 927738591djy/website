@@ -109,9 +109,11 @@ export default {
   font-size: 18px;
 }
 .box {
+  opacity: 0;
   height: 471px;
   width: 309px;
   background-color: #fff;
+  animation: toUp 1s forwards;
 }
 .box-top {
   background-color: #c4c4c4;
@@ -160,7 +162,20 @@ export default {
     background-color: #ef4f19;
 }
 .middle-box{
+  opacity: 0;
     height: 516px;
     margin: 0 30px;
+    animation: toUp 1s forwards;
+    animation-delay: 0.5s;
+}
+@keyframes toUp {
+  0% {
+    transform: translateY(1000px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 </style>

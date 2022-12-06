@@ -200,7 +200,7 @@ export default {
         // },
         on: {
           slideChangeTransitionEnd: function () {
-            console.log(this.activeIndex); //每次切换结束时，在控制台打印现在是第几个slide
+            //console.log(this.activeIndex); //每次切换结束时，在控制台打印现在是第几个slide
           },
         },
       },

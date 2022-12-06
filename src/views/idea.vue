@@ -125,6 +125,11 @@ export default {};
     margin: 10px 0;
     margin-bottom: 15px;
 }
+.confirm:hover{
+background-color: transparent;
+border: 1px solid #ef4f19;
+color: #ef4f19;
+}
 .left p{
     color: #666;
 }

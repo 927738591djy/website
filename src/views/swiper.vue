@@ -177,7 +177,7 @@ export default {
   methods: {
     to(index) {
       this.swiper.slideTo(index);
-      console.log(this.swiper);
+      // console.log(this.swiper);
       this.currentindex = index;
     },
   },

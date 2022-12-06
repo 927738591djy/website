@@ -71,7 +71,7 @@ export default {
   position: absolute;
   top: 67px;
   left: 0;
-  height: 197px;
+  height: 237px;
   background: url("https://ccdn.goodq.top/caches/4ce61cd756c0c3467de0977d6849043b/aHR0cDovLzU3ZWEyMzYwMzY5YjUudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNi8xMS9jNTJhNGU3MmZlNGEzYTRmZjgyMGIxN2JkYzkyYzhlMS05MC53ZWJw.webp");
   background-position: center;
   background-size: cover;
@@ -92,11 +92,11 @@ export default {
 }
 .middle {
   position: absolute;
-  top: 264px;
+  top: 304px;
   left: 0;
-  height: 755px;
+  height: 780px;
   width: 100%;
-  padding: 100px 200px;
+  padding: 0 200px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -109,12 +109,14 @@ export default {
   border-radius: 15px;
   padding-left: 30px;
   padding-right: 30px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 40px;
+  padding-bottom: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  animation: toUp 1s;
+  transition: all 0.8s;
 }
 .title {
   color: rgb(239, 79, 25);
@@ -123,14 +125,24 @@ export default {
 }
 .swiper{
   position: absolute;
-  top:1019px;
+  top:1084px;
   width: 100%;
   height: 662px;
 }
 .footer-po{
   position: absolute;
-  top: 1681px;
+  top: 1744px;
   width: 100%;
   height: 347px;
+}
+@keyframes toUp {
+  0% {
+    transform: translateY(1000px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 </style>

@@ -117,10 +117,12 @@ export default {
   flex-direction: column;
   text-align: center;
   align-items: center;
+
 }
 .bottom-box img {
   width: 70%;
   margin-bottom: 30px;
+  animation: scale 0.5s;
 }
 .hover-swing {
   animation: swing 2s;
@@ -233,6 +235,15 @@ export default {
   }
   100% {
     transform: rotate(0deg);
+  }
+}
+
+@keyframes scale {
+  0%{
+    transform: scale(0.3);
+  }
+  100%{
+    transform: scale(1);
   }
 }
 </style>
