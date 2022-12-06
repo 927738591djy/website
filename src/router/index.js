@@ -6,6 +6,7 @@ import Price from '../views/price.vue'
 import News from '../views/news.vue'
 import About from '../views/about.vue'
 import Contact from '../views/contact.vue'
+import Person from '../views/person.vue'
 
 Vue.use(vueRouter) //使用路由
 
@@ -40,6 +41,11 @@ const routes = [
         path: '/contact',
         name: 'Contact',
         component: Contact
+    },
+    {
+        path: '/person',
+        name: 'Person',
+        component: Person
     }
 ]
 

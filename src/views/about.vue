@@ -35,40 +35,47 @@
                         <!--每页幻灯片使用swiper-slide标签-->
                         <!--幻灯片组件生成的标签自带.swiper-slide的类名，但单类名选择器设置的部分css(如宽高)将被覆盖-->
                         <swiper-slide class="swiper_slide_item" :class="{ 'to-up': isToUp }">
-                            <div class="left">
-                                <img src="https://ccdn.goodq.top/caches/4ce61cd756c0c3467de0977d6849043b/aHR0cDovLzU3ZWEyMzYwMzY5YjUudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNy8wNi8xNDk3OTMyMjAwNTk0OGExYTg3YjlhYjQ5NDUtMjIweDMwMC05MC53ZWJw.webp"
-                                    alt="acb0cd2316ff2a9e771b13be7c38bd50.png" description="" data-attach-id="18836"
-                                    data-title="acb0cd2316ff2a9e771b13be7c38bd50.png" title="" src-img="" />
-                                <div class="left-name">
-                                    <div class="left-name-name">Joeby Ragbe</div>
-                                    <div class="left-name-work">ceo</div>
+                            <router-link to="/person">
+                                <div class="left">
+                                    <img src="https://ccdn.goodq.top/caches/4ce61cd756c0c3467de0977d6849043b/aHR0cDovLzU3ZWEyMzYwMzY5YjUudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNy8wNi8xNDk3OTMyMjAwNTk0OGExYTg3YjlhYjQ5NDUtMjIweDMwMC05MC53ZWJw.webp"
+                                        alt="acb0cd2316ff2a9e771b13be7c38bd50.png" description="" data-attach-id="18836"
+                                        data-title="acb0cd2316ff2a9e771b13be7c38bd50.png" title="" src-img="" />
+                                    <div class="left-name">
+                                        <div class="left-name-name">Joeby Ragbe</div>
+                                        <div class="left-name-work">ceo</div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="right"><span class="intro-line"></span>请用一句话来概括人物特点</div>
-                        </swiper-slide>
-                        <swiper-slide class="swiper_slide_item">
-                            <div class="left">
-                                <img src="https://ccdn.goodq.top/caches/4ce61cd756c0c3467de0977d6849043b/aHR0cDovLzU3ZWEyMzYwMzY5YjUudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNy8wNi8xNDk3OTMyMjAwNTk0OGExYTg3YjlhYjQ5NDUtMjIweDMwMC05MC53ZWJw.webp"
-                                    alt="acb0cd2316ff2a9e771b13be7c38bd50.png" description="" data-attach-id="18836"
-                                    data-title="acb0cd2316ff2a9e771b13be7c38bd50.png" title="" src-img="" />
-                                <div class="left-name">
-                                    <div class="left-name-name">Joeby Ragbe</div>
-                                    <div class="left-name-work">ceo</div>
-                                </div>
-                            </div>
+                            </router-link>
                             <div class="right"><span class="intro-line"></span>请用一句话来概括人物特点</div>
 
                         </swiper-slide>
                         <swiper-slide class="swiper_slide_item">
-                            <div class="left">
-                                <img src="https://ccdn.goodq.top/caches/4ce61cd756c0c3467de0977d6849043b/aHR0cDovLzU3ZWEyMzYwMzY5YjUudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNy8wNi8xNDk3OTMyMjAwNTk0OGExYTg3YjlhYjQ5NDUtMjIweDMwMC05MC53ZWJw.webp"
-                                    alt="acb0cd2316ff2a9e771b13be7c38bd50.png" description="" data-attach-id="18836"
-                                    data-title="acb0cd2316ff2a9e771b13be7c38bd50.png" title="" src-img="" />
-                                <div class="left-name">
-                                    <div class="left-name-name">Joeby Ragbe</div>
-                                    <div class="left-name-work">ceo</div>
+                            <router-link to="/person">
+                                <div class="left">
+                                    <img src="https://ccdn.goodq.top/caches/4ce61cd756c0c3467de0977d6849043b/aHR0cDovLzU3ZWEyMzYwMzY5YjUudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNy8wNi8xNDk3OTMyMjAwNTk0OGExYTg3YjlhYjQ5NDUtMjIweDMwMC05MC53ZWJw.webp"
+                                        alt="acb0cd2316ff2a9e771b13be7c38bd50.png" description="" data-attach-id="18836"
+                                        data-title="acb0cd2316ff2a9e771b13be7c38bd50.png" title="" src-img="" />
+                                    <div class="left-name">
+                                        <div class="left-name-name">Joeby Ragbe</div>
+                                        <div class="left-name-work">ceo</div>
+                                    </div>
                                 </div>
-                            </div>
+                            </router-link>
+                            <div class="right"><span class="intro-line"></span>请用一句话来概括人物特点</div>
+
+                        </swiper-slide>
+                        <swiper-slide class="swiper_slide_item">
+                            <router-link to="/person">
+                                <div class="left">
+                                    <img src="https://ccdn.goodq.top/caches/4ce61cd756c0c3467de0977d6849043b/aHR0cDovLzU3ZWEyMzYwMzY5YjUudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNy8wNi8xNDk3OTMyMjAwNTk0OGExYTg3YjlhYjQ5NDUtMjIweDMwMC05MC53ZWJw.webp"
+                                        alt="acb0cd2316ff2a9e771b13be7c38bd50.png" description="" data-attach-id="18836"
+                                        data-title="acb0cd2316ff2a9e771b13be7c38bd50.png" title="" src-img="" />
+                                    <div class="left-name">
+                                        <div class="left-name-name">Joeby Ragbe</div>
+                                        <div class="left-name-work">ceo</div>
+                                    </div>
+                                </div>
+                            </router-link>
                             <div class="right"><span class="intro-line"></span>请用一句话来概括人物特点</div>
                         </swiper-slide>
 
@@ -101,7 +108,7 @@ export default {
         return {
             intro: "这是段介绍哦",
             currentindex: "",
-            isToUp:false,
+            isToUp: false,
             //swiperOption：swiper配置项信息，需要绑定在swiper标签的 :option 属性中
             swiperOption: {
                 // 前进后退按钮
@@ -151,7 +158,7 @@ export default {
             // console.log(offsetTop,offsetBottom)
             if (offsetTop + 200 <= window.innerHeight && offsetBottom >= 0) {
                 // console.log('进入可视区域');
-              this.isToUp = true
+                this.isToUp = true
             } else {
                 // console.log('移出可视区域');
             }
@@ -382,9 +389,10 @@ export default {
     animation: rotate 1s;
 }
 
-.to-up{
+.to-up {
     animation: toUp 1s;
 }
+
 @keyframes rotate {
     0% {
         transform: rotate(-360deg);
@@ -394,15 +402,15 @@ export default {
         transform: rotate(0deg);
     }
 }
+
 @keyframes toUp {
-  0% {
-    transform: translateY(1000px);
-  }
+    0% {
+        transform: translateY(1000px);
+    }
 
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
-
 </style>
