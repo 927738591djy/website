@@ -1,6 +1,12 @@
 <template>
     <div>
-        <Declaration title="关于" red-title="我们" :intro="intro"></Declaration>
+        <div class="about-banner">
+            <div class="background"></div>
+            <div class="about-title">
+                <div style="font-size:36px;margin-bottom:40px">关于<span style="color:#ef4f19">我们</span></div>
+                <p>您可以双击这里或者点击编辑按钮来修改内容，您还可以添加图标按钮图片等常用元素</p>
+            </div>
+        </div>
         <div class="about">
             <div class="about-middle">
                 <div class="about-middle-left">
@@ -19,21 +25,16 @@
                     </div>
                 </div>
             </div>
-            <div class="our-team">
+            <div class="our-team" ref="ourTeam">
                 <div class="team-title">我们的团队</div>
                 <div class="team-line"></div>
                 <div class="team-title-text">青年是团队的核心</div>
-
-
-
-
-
                 <div style="width:80%;">
                     <swiper :options="swiperOption" ref="mySwiper" id="mySwiper">
                         <!--必须的组件-->
                         <!--每页幻灯片使用swiper-slide标签-->
                         <!--幻灯片组件生成的标签自带.swiper-slide的类名，但单类名选择器设置的部分css(如宽高)将被覆盖-->
-                        <swiper-slide class="swiper_slide_item">
+                        <swiper-slide class="swiper_slide_item" :class="{ 'to-up': isToUp }">
                             <div class="left">
                                 <img src="https://ccdn.goodq.top/caches/4ce61cd756c0c3467de0977d6849043b/aHR0cDovLzU3ZWEyMzYwMzY5YjUudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNy8wNi8xNDk3OTMyMjAwNTk0OGExYTg3YjlhYjQ5NDUtMjIweDMwMC05MC53ZWJw.webp"
                                     alt="acb0cd2316ff2a9e771b13be7c38bd50.png" description="" data-attach-id="18836"
@@ -81,19 +82,7 @@
                         <div class="swiper-button-next" slot="button-next"></div>
                     </swiper>
                 </div>
-
-
-
-
-
-
-
             </div>
-
-
-
-
-
         </div>
         <div class="advert-po">
             <Advert></Advert>
@@ -105,20 +94,20 @@
 </template>
 
 <script>
-import Declaration from '../components/declaration.vue'
 import Advert from '../components/advert.vue'
 import Footer from '../components/Footer.vue'
 export default {
     data() {
         return {
-            intro:"这是段介绍哦",
+            intro: "这是段介绍哦",
             currentindex: "",
+            isToUp:false,
             //swiperOption：swiper配置项信息，需要绑定在swiper标签的 :option 属性中
             swiperOption: {
                 // 前进后退按钮
                 navigation: {
-                  nextEl: ".swiper-button-next",
-                  prevEl: ".swiper-button-prev",
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
                 },
                 //幻灯片播放配置项
                 loop: true, //是否循环播放
@@ -137,7 +126,7 @@ export default {
         };
     },
     components: {
-        Declaration, Advert, Footer
+        Advert, Footer
     },
     //计算属性
     computed: {
@@ -152,7 +141,28 @@ export default {
             console.log(this.swiper);
             this.currentindex = index;
         },
+        scrollHandle() {
+            const offset = this.$refs.ourTeam.getBoundingClientRect();
+            // getBoundingClientRect返回元素的大小及其相对于视口的位置
+            const offsetTop = offset.top;
+            const offsetBottom = offset.bottom;
+            // const offsetHeight = offset.height;
+            // 进入可视区域
+            // console.log(offsetTop,offsetBottom)
+            if (offsetTop + 200 <= window.innerHeight && offsetBottom >= 0) {
+                // console.log('进入可视区域');
+              this.isToUp = true
+            } else {
+                // console.log('移出可视区域');
+            }
+        }
     },
+    mounted() {
+        window.addEventListener("scroll", this.scrollHandle, true); // 监听 监听元素是否进入/移出可视区域
+    },
+    beforeDestroy() {
+        window.removeEventListener('scroll', this.scrollHandle, true);
+    }
 
 }
 </script>
@@ -160,21 +170,42 @@ export default {
 <style scoped>
 .about {
     position: absolute;
-    top: 367px;
+    top: 360px;
     left: 0;
     height: 1180px;
     width: 100%;
     background-color: rgba(247, 247, 247, 0.7);
 }
 
-.declaration {
+.about-banner {
+    position: relative;
+    position: absolute;
+    top: 67px;
     background-image: url('https://ccdn.goodq.top/caches/4ce61cd756c0c3467de0977d6849043b/aHR0cDovLzU3ZWEyMzYwMzY5YjUudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNi8xMS8wMmUyNTdmOTdlODkyYWY5MjY3Y2UwZGQ1YTA3N2I2Ni05MC53ZWJw.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
     background-position: 0 0;
-    height: 300px;
+    height: 293px;
     z-index: 10;
+    width: 100%;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(239, 239, 239, 0.9);
+}
+
+.about-title {
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #000;
 }
 
 .about-middle {
@@ -195,6 +226,8 @@ export default {
     width: 600px
 }
 
+
+
 .about-middle-right h6 {
     font-size: 14px;
     font-weight: 400;
@@ -208,6 +241,7 @@ export default {
     justify-content: center;
     align-items: center;
     height: 820px;
+    overflow: hidden;
 }
 
 .team-title {
@@ -250,7 +284,6 @@ export default {
     /* align-items: center; */
     padding: 0 150px;
     z-index: 10;
-
 }
 
 
@@ -344,4 +377,32 @@ export default {
     width: 100%;
     height: 160px;
 }
+
+.about-middle-left img {
+    animation: rotate 1s;
+}
+
+.to-up{
+    animation: toUp 1s;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(-360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+@keyframes toUp {
+  0% {
+    transform: translateY(1000px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
 </style>
