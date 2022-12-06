@@ -230,7 +230,7 @@ export default {
 .we {
   position: relative;
   position: absolute;
-  top: 2187px;
+  top: 2152px;
   width: 100%;
   height: 586px;
   background-image: url("https://ccdn.goodq.top/caches/4ce61cd756c0c3467de0977d6849043b/aHR0cDovLzU3ZWEyMzYwMzY5YjUudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNi8xMS8wMmUyNTdmOTdlODkyYWY5MjY3Y2UwZGQ1YTA3N2I2Ni05MC53ZWJw.webp");

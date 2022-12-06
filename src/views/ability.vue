@@ -49,6 +49,8 @@ export default {
 .background {
   z-index: 10;
   position: absolute;
+  left: 0;
+  top:0;
   height: 100%;
   width: 100%;
   background-color: rgba(247, 247, 247, 0.7);

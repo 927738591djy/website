@@ -6,7 +6,7 @@
     <We></We>
     <Idea></Idea>
     <div class="advert-po"><Advert></Advert></div>
-    <div class="footer-po"><Footer></Footer></div>
+    <div class="footer-po-home"><Footer></Footer></div>
   </div>
 </template>
 
@@ -31,11 +31,11 @@ components:{
 }
 .swiper-po{
   position: absolute;
-  top: 1525px;
+  top: 1490px;
   width: 100%;
   height: 662px;
 }
-.footer-po{
+.footer-po-home{
   position: absolute;
   top: 3576px;
   width: 100%;

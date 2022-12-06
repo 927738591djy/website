@@ -50,7 +50,8 @@ export default {
     left: 0;
     top: 0;
     background-color: #22282d;
-    padding: 20px 130px;
+    padding: 0px 130px;
+    height: 67px;
 }
 
 .top-inner {
@@ -65,23 +66,20 @@ export default {
 
 .nav li {
     font: normal normal 15px / 23px "微软雅黑", Helvetica, Arial, Verdana, sans-serif;
-    padding: 0 30px;
-
+    padding:21px 30px;
 }
 
 .nav li a {
     color: #cecece;
-    z-index: 10;
     display: inline-block;
-    /* padding-bottom: 20px; */
+    height: 100%;
 }
 
 .nav li:hover a {
     color: #ef4f19;
-    border-bottom: 1px solid #ef4f19;
 }
 
-.nav li:hover li {
+.nav li:hover {
     border-bottom: 1px solid #ef4f19;
 }
 
