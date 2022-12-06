@@ -16,27 +16,25 @@
 
     <div class="bottom">
       <div class="bottom-box">
-        <img @mouseover="isHoverfirst = !isHoverfirst" @mouseleave="hoverRemove"
-          :class="{ 'hover-swing': isHoverfirst }"
+        <img
           src="https://ccdn.goodq.top/caches/4ce61cd756c0c3467de0977d6849043b/aHR0cDovLzU3ZWEyMzYwMzY5YjUudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNi8xMS9kY2Q2YjZmM2I5YzAxZmEwYTkxMTlmNjNlYjg0Y2RkMC0xMzJ4MTAwLTkwLndlYnA_p_p100_p_3D.webp" />
         <div class="small-title">可视化报表</div>
         <div>応损捠捡枛换换攴朰朲朳枛朸桹</div>
       </div>
       <div class="bottom-box">
-        <img @mouseover="isHovertwo = !isHovertwo" @mouseleave="hoverRemove" :class="{ 'hover-swing': isHovertwo }"
+        <img
           src="https://ccdn.goodq.top/caches/4ce61cd756c0c3467de0977d6849043b/aHR0cDovLzU3ZWEyMzYwMzY5YjUudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNi8xMS9kY2Q2YjZmM2I5YzAxZmEwYTkxMTlmNjNlYjg0Y2RkMC0xMzJ4MTAwLTkwLndlYnA_p_p100_p_3D.webp" />
         <div class="small-title">可视化报表</div>
         <div>応损捠捡枛换换攴朰朲朳枛朸桹</div>
       </div>
       <div class="bottom-box">
-        <img @mouseover="isHoverthree = !isHoverthree" @mouseleave="hoverRemove"
-          :class="{ 'hover-swing': isHoverthree }"
+        <img
           src="https://ccdn.goodq.top/caches/4ce61cd756c0c3467de0977d6849043b/aHR0cDovLzU3ZWEyMzYwMzY5YjUudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNi8xMS9kY2Q2YjZmM2I5YzAxZmEwYTkxMTlmNjNlYjg0Y2RkMC0xMzJ4MTAwLTkwLndlYnA_p_p100_p_3D.webp" />
         <div class="small-title">可视化报表</div>
         <div>応损捠捡枛换换攴朰朲朳枛朸桹</div>
       </div>
       <div class="bottom-box">
-        <img @mouseover="isHoverfour = !isHoverfour" @mouseleave="hoverRemove" :class="{ 'hover-swing': isHoverfour }"
+        <img
           src="https://ccdn.goodq.top/caches/4ce61cd756c0c3467de0977d6849043b/aHR0cDovLzU3ZWEyMzYwMzY5YjUudDczLnFpZmVpeWUuY29tL3FmeS1jb250ZW50L3VwbG9hZHMvMjAxNi8xMS9kY2Q2YjZmM2I5YzAxZmEwYTkxMTlmNjNlYjg0Y2RkMC0xMzJ4MTAwLTkwLndlYnA_p_p100_p_3D.webp" />
         <div class="small-title">可视化报表</div>
         <div>応损捠捡枛换换攴朰朲朳枛朸桹</div>
@@ -51,11 +49,6 @@ export default {
   name: "Banner",
   data() {
     return {
-      isHoverfirst: false,
-      isHovertwo: false,
-      isHoverthree: false,
-      isHoverfour: false,
-      timer: null,
     };
   },
   mounted() {
@@ -65,17 +58,6 @@ export default {
     show(top1, top2, top3);
   },
   methods: {
-    // hoverShow() {
-    //   this.isHover = !this.isHover;
-    // },
-    hoverRemove() {
-      this.timer = setTimeout(() => {
-        this.isHoverfirst = !this.isHoverfirst;
-        this.isHovertwo = !this.isHovertwo;
-        this.isHoverthree = !this.isHoverthree;
-        this.isHoverfour = !this.isHoverfour;
-      }, 1500);
-    },
   },
 };
 </script>
@@ -113,17 +95,15 @@ export default {
 
 }
 
+
 .bottom-box img {
   width: 70%;
   margin-bottom: 30px;
-  animation: scale 0.5s;
+  animation: scale 0.5s forwards;
 }
-
-.hover-swing {
-  animation: swing 2s;
-  transition: all 2s;
+.bottom-box:hover img{
+  animation: swing 1s;
 }
-
 .small-title {
   font-weight: 600;
   margin-bottom: 10px;
